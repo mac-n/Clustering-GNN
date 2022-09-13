@@ -1,5 +1,13 @@
 # Clustering-GNN
- Code for 'Alzheimer’s Disease Classification Using Cluster-based Labelling for Graph Neural Network on Tau PET Imaging and Heterogeneous Data' Original data is available from ADNI; processed TAU-PET data can be made available upon request from the corresponding author if permission is obtained from ADNI. Python version used was Python 3.8.12, conda 4.12.0; environment available in repository as environment.yml. R scripts were run in R version R version 4.2.1 Patched (2022-07-22 r82626 ucrt) - patch allows Java based packages including FSelector, used in one of the scripts here, to run in Windows 64. 'adnimerge' R package version 0.0.1 was used to access ADNI data.
+ Code for 'Alzheimer’s Disease Classification Using Cluster-based Labelling for Graph Neural Network on Tau PET Imaging and Heterogeneous Data' 
+ 
+ Original data is available from ADNI; processed TAU-PET data can be made available upon request from the corresponding author if permission is obtained from ADNI.
+ 
+Python version used was Python 3.8.12, conda 4.12.0; environment available in repository as environment.yml.
+
+R scripts were run in R version R version 4.2.1 Patched (2022-07-22 r82626 ucrt) - patch allows Java based packages including FSelector, used in one of the scripts here, to run in Windows 64. 
+
+'adnimerge' R package version 0.0.1 was used to access ADNI data.
 
 
 ## Dataset generation
