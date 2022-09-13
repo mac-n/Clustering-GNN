@@ -1,0 +1,21 @@
+name: myenv
+channels:
+  - defaults
+dependencies:
+  - pytorch
+  - jupyter
+  - tensorboard
+  - keras
+  - scikit-learn
+  - torchaudio
+  - torchvision
+  - cudatoolkit=11.3
+  - pandas
+  - matplotlib
+  - hdbscan
+  - plotly
+  - tensorflow
+  - pydotplus
+  - python-graphviz
+  - pydot
+prefix: C:\Users\niamh\anaconda3\envs\myenv
