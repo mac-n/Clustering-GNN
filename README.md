@@ -1,8 +1,9 @@
 # Clustering-GNN
- Code for 'Alzheimer’s Disease Classification Using Cluster-based Labelling for Graph Neural Network on Tau PET Imaging and Heterogeneous Data '
+ Code for 'Alzheimer’s Disease Classification Using Cluster-based Labelling for Graph Neural Network on Tau PET Imaging and Heterogeneous Data' Original data is available from ADNI; processed TAU-PET data can be made available upon request from the corresponding author if permission is obtained from ADNI. Python version used was Python 3.8.12, conda 4.12.0; environment available in repository as environment.yml. R scripts were run in R version R version 4.2.1 Patched (2022-07-22 r82626 ucrt) - patch allows Java based packages including FSelector, used in one of the scripts here, to run in Windows 64. 'adnimerge' R package version 0.0.1 was used to access ADNI data.
+
 
 ## Dataset generation
-This R script "combine CFA subassessments with other data.R" uses the ADNIMERGE R library (adni.loni.usc.edu) to combine demographic and neuroimaging features with individual questions from CFA features, and saves the output as CSV files. TAU-PET features were processed using SVM based on ADNI data. Original data is available from ADNI; processed TAU-PET data can be made available upon request from the corresponding author if permission is obtained from ADNI. 
+This R script "combine CFA subassessments with other data.R" uses the ADNIMERGE R library (adni.loni.usc.edu) to combine demographic and pre-processed neuroimaging features with individual questions from CFA features, and saves the output as CSV files. TAU-PET features were processed using SVM based on ADNI data. 
 
 ## Data pre-processing. 
 Most of the data processing is done in GNN data prep.ipynb, which imports the CSV file generated in the previous step.  This normalises the data and exports it as numpy arrays, performs the UMAP clustering, draws the graphs for Figure 1, generates and labels the clusters, and generates and exports the relabelled data, and performs a kappa test to determine the It also exports data with cluster labels in csv format so that further data analysis can be conducted in R.
